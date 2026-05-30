@@ -20,3 +20,4 @@
 
 | \*\*Videos de defensa\*\* | Grabación individual (10 min c/u) | Cada integrante | \[X] Pendiente / \[] Completado |
 
+
