@@ -10,7 +10,7 @@ Pagina creada para visualizar el dashboard
 | **JavaScript** | Multiparadigma (Prototípico, Funcional) | JIT (Just-In-Time) / V8 Engine | | |
 
 
-### 1. Matriz Comparativa de Paradigmas de Programación
+#### 1. Matriz Comparativa de Paradigmas de Programación
 
 La siguiente tabla sintetiza los cinco paradigmas fundamentales abordados en esta investigación, destacando sus principios, ventajas, limitaciones y manifestación en lenguajes modernos (Sebesta, 2016).
 
