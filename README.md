@@ -1,4 +1,4 @@
-# Algoritmo de Collatz en Python
+# Algoritmo de Collatz en JavaScript (Node.js)
 
 ## Descripción del algoritmo
 La **conjetura de Collatz** (también conocida como problema 3n+1) es un problema matemático que establece que, para cualquier número entero positivo, aplicando las siguientes reglas se llega siempre al número 1:
@@ -11,13 +11,13 @@ Este programa calcula la **cantidad de pasos** que tarda cada número desde 1 ha
 ## Requisitos previos
 | Requisito | Versión mínima | Comando de verificación |
 |-----------|---------------|------------------------|
-| Python | 3.12 o superior | python --version |
+| Node.js | 18.x o superior | `node --version` |
 
-## Instalación (si no tienes Python)
-Si no tienes Python instalado, descárgalo desde:
-- [python.org/downloads/](https://www.python.org/downloads/)
+## Instalación (si no tienes Node.js)
+Si no tienes Node.js instalado, descárgalo desde:
+- [nodejs.org](https://nodejs.org/)
 
-**Importante:** Durante la instalación, marca la opción **"Add Python to PATH"**.
+**Recomendación:** Descarga la versión **LTS** (Long Term Support).
 
 ## Ejecución del programa
 
@@ -26,20 +26,19 @@ Si no tienes Python instalado, descárgalo desde:
 - En Linux/Mac: Abre **Terminal**
 
 ### Paso 2: Navegar a la carpeta del código
-
 cd ruta/donde/guardaste/el/codigo
 
 ### Paso 3: Ejecutar el programa
-python collatz.py
+node collatz.js
 
 ## Ejemplo completo (asumiendo que el archivo está en el Escritorio)
 cd C:\Users\TuUsuario\Desktop
-python collatz.py
+node collatz.js
 
 ## Resultado esperado
-Lenguaje: Python
+Lenguaje: JavaScript (Node.js)
 Números procesados: 1 hasta 100000
-Tiempo de ejecución: 895.14 milisegundos
+Tiempo de ejecución: 22 milisegundos
 Total de pasos acumulados: 10753840
 
 ## Hardware utilizado para las pruebas
@@ -48,23 +47,26 @@ RAM: 16.0 GB
 Sistema operativo: Windows 11 Pro (23H2)
 
 ## Análisis de rendimiento
-Python es un lenguaje interpretado, lo que significa que cada instrucción se traduce y ejecuta línea por línea en tiempo real. Esto lo hace más lento que lenguajes compilados como Rust o Zig, pero su sintaxis clara y su gran ecosistema de bibliotecas lo hacen ideal para ciencia de datos, IA y prototipado rápido.
+JavaScript es un lenguaje dinámico e interpretado, pero su motor V8 (utilizado por Node.js) implementa compilación JIT (Just-In-Time). Esto significa que el código se compila a nativo mientras se ejecuta, lo que le permite alcanzar un rendimiento muy superior al de lenguajes interpretados tradicionales como Python.
 
-## Factores que afectan el rendimiento en Python:
-Global Interpreter Lock (GIL): Limita la ejecución de hilos en paralelo.
-Tipado dinámico: Las variables pueden cambiar de tipo en tiempo de ejecución.
-Interpretación vs compilación: No se genera código nativo previamente.
+En las pruebas realizadas, JavaScript fue el más rápido de los cuatro lenguajes (~22 ms), superando incluso a Rust y Zig en este caso particular. Esto se debe a la madurez del motor V8 y sus optimizaciones.
+
+## Factores que afectan el rendimiento en JavaScript:
+Compilación JIT: El código se compila a nativo en tiempo de ejecución, no antes.
+Tipado dinámico: Las variables pueden cambiar de tipo, lo que añade cierta sobrecarga.
+Event Loop: Modelo asíncrono no bloqueante para entrada/salida.
+Recolector de basura: Gestiona automáticamente la memoria, pero puede introducir pausas.
 
 ## Cómo reproducir las pruebas empíricas
-Asegúrate de tener Python instalado correctamente.
-Descarga el archivo collatz.py desde este repositorio.
+Asegúrate de tener Node.js instalado correctamente.
+Descarga el archivo collatz.js desde este repositorio.
 Ejecuta el programa al menos 3 veces y calcula el promedio de los tiempos.
 Registra los resultados en la tabla comparativa del informe.
 
 ## Enlaces de interés
 Conjetura de Collatz - Wikipedia
-Documentación oficial de Python
-Descargar Python
+Documentación oficial de Node.js
+Motor V8 de Google
 
 ## Créditos
 Asignatura: Lenguajes y Compiladores (UNEG)
