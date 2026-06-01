@@ -13,7 +13,7 @@ Este programa calcula la **cantidad de pasos** que tarda cada número desde 1 ha
 |-----------|---------------|------------------------|
 | Python | 3.12 o superior | `python --version` |
 
-## 🔧 Instalación (si no tienes Python)
+## Instalación (si no tienes Python)
 Si no tienes Python instalado, descárgalo desde:
 - [python.org/downloads/](https://www.python.org/downloads/)
 
