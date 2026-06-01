@@ -61,12 +61,13 @@ cd C:\Users\TuUsuario\Desktop\rust
 cargo run
 
 ## Estructura del proyecto
+```
 rust/
-├── Cargo.toml      # Archivo de configuración del proyecto
+├── Cargo.toml
 ├── src/
-│   └── main.rs     # Código fuente principal
-└── target/         # Carpeta generada con el ejecutable (aparece al compilar)
-
+│   └── main.rs
+└── target/
+```
 ## Resultado esperado
 Lenguaje: Rust
 Números procesados: 1 hasta 100000
