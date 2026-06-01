@@ -1,23 +1,112 @@
-# paginapowerbi
-Pagina creada para visualizar el dashboard
+# Algoritmo de Collatz en Python
+
+## 📌 Descripción del algoritmo
+La **conjetura de Collatz** (también conocida como problema 3n+1) es un problema matemático que establece que, para cualquier número entero positivo, aplicando las siguientes reglas se llega siempre al número 1:
+
+- Si el número es **par**, se divide entre 2.
+- Si el número es **impar**, se multiplica por 3 y se suma 1.
+
+Este programa calcula la **cantidad de pasos** que tarda cada número desde 1 hasta N (N = 100,000) en llegar a 1, y acumula el total de pasos de todos los números. Además, mide el **tiempo de ejecución** para evaluar el rendimiento del lenguaje.
+
+## 📋 Requisitos previos
+| Requisito | Versión mínima | Comando de verificación |
+|-----------|---------------|------------------------|
+| Python | 3.12 o superior | `python --version` |
+
+## 🔧 Instalación (si no tienes Python)
+Si no tienes Python instalado, descárgalo desde:
+- [python.org/downloads/](https://www.python.org/downloads/)
+
+**Importante:** Durante la instalación, marca la opción **"Add Python to PATH"**.
+
+## ▶️ Ejecución del programa
+
+### Paso 1: Abrir terminal
+- En Windows: Abre **PowerShell** o **Símbolo del sistema**
+- En Linux/Mac: Abre **Terminal**
+
+### Paso 2: Navegar a la carpeta del código
+
+cd ruta/donde/guardaste/el/codigo
+
+### Paso 3: Ejecutar el programa
+python collatz.py
+
+## Ejemplo completo (asumiendo que el archivo está en el Escritorio)
+cd C:\Users\TuUsuario\Desktop
+python collatz.py
+
+## 📊 Resultado esperado
+Lenguaje: Python
+Números procesados: 1 hasta 100000
+Tiempo de ejecución: 895.14 milisegundos
+Total de pasos acumulados: 10753840
+
+🖥️ Hardware utilizado para las pruebas
+Procesador: AMD Ryzen 5 3600 6-Core (3.60 GHz)
+
+RAM: 16.0 GB
+
+Sistema operativo: Windows 11 Pro (23H2)
+
+📈 Análisis de rendimiento
+Python es un lenguaje interpretado, lo que significa que cada instrucción se traduce y ejecuta línea por línea en tiempo real. Esto lo hace más lento que lenguajes compilados como Rust o Zig, pero su sintaxis clara y su gran ecosistema de bibliotecas lo hacen ideal para ciencia de datos, IA y prototipado rápido.
+
+Factores que afectan el rendimiento en Python:
+Global Interpreter Lock (GIL): Limita la ejecución de hilos en paralelo.
+
+Tipado dinámico: Las variables pueden cambiar de tipo en tiempo de ejecución.
+
+Interpretación vs compilación: No se genera código nativo previamente.
+
+🧪 Cómo reproducir las pruebas empíricas
+Asegúrate de tener Python instalado correctamente.
+
+Descarga el archivo collatz.py desde este repositorio.
+
+Ejecuta el programa al menos 3 veces y calcula el promedio de los tiempos.
+
+Registra los resultados en la tabla comparativa del informe.
+
+🔗 Enlaces de interés
+Conjetura de Collatz - Wikipedia
+
+Documentación oficial de Python
+
+Descargar Python
+
+📝 Créditos
+Asignatura: Lenguajes y Compiladores (UNEG)
+
+Grupo: Los ASTronautas
+
+Tema: 2 - Lenguajes de Programación
+
+Actividad: II - Benchmarking y análisis morfosintáctico
 
 
-| Lenguaje de Programación | Paradigma Dominante | Mecanismo de Ejecución y Compilación | Tiempo de Ejecución Promedio (ms) | Consumo de Memoria Pico (MB) |
-| :--- | :--- | :--- | :---: | :---: |
-| **Zig** | Imperativo / Estructurado | Compilación Nativa (LLVM) | | |
-| **Python** | Multiparadigma (OO, Imperativo) | Interpretado (CPython / VM) | | |
-| **Rust** | Multiparadigma (Funcional, Imperativo) | Compilación Nativa (LLVM) | | |
-| **JavaScript** | Multiparadigma (Prototípico, Funcional) | JIT (Just-In-Time) / V8 Engine | | |
+---
 
+## 📁 Para descargar como archivo .txt
 
-#### 1. Matriz Comparativa de Paradigmas de Programación
+Si prefieres descargarlo como archivo para luego copiar:
 
-La siguiente tabla sintetiza los cinco paradigmas fundamentales abordados en esta investigación, destacando sus principios, ventajas, limitaciones y manifestación en lenguajes modernos (Sebesta, 2016).
+1. Haz clic derecho en este mensaje
+2. Selecciona "Copiar texto"
+3. Pega en el Bloc de notas
+4. Guarda como `README_python.txt`
 
-| Paradigma | Principios Fundamentales | Ventajas Clave | Limitaciones | Lenguajes Representativos |
-|-----------|--------------------------|----------------|--------------|---------------------------|
-| **Imperativo / Estructural** | Gestión explícita del estado, secuencialidad de instrucciones, mutabilidad de memoria, efectos secundarios, estructuras de control básicas (bucle, condicionales) | Control preciso del hardware, eficiencia en sistemas embebidos, modelo mental sencillo | Complejidad en sistemas grandes, difícil mantenimiento, errores por estado mutable | C, Pascal, Zig |
-| **Orientado a Objetos (POO)** | Encapsulamiento, polimorfismo, herencia vs composición, abstracción basada en datos y comportamiento combinados, envío de mensajes | Reutilización, modelado del mundo real, mantenibilidad, escalabilidad | Complejidad añadida, sobreingeniería, problemas con herencia múltiple | Java, C++, Python |
-| **Funcional** | Inmutabilidad de datos, funciones como ciudadanas de primer orden, evaluación de la referencia, transparencia referencial, ausencia de efectos colaterales | Código fiable, prueba y depuración, concurrencia natural por diseño | Curva de aprendizaje pronunciada, overhead por inmutabilidad, no intuitivo para problemas con estado intensivo | Haskell, Elixir, Rust, JavaScript |
-| **Lógico Declarativo** | Programación basada en relaciones, unificación, cláusulas de Horn, abstracción total del flujo de control por parte del programador | Alto nivel de abstracción, demostración automática de teoremas, ideal para sistemas de reglas | Bajo rendimiento en problemas grandes, ecosistema reducido, poca aplicación comercial | Prolog, Datalog |
-| **Concurrencia Actores** | Paso de mensajes entre entidades, aislamiento estricto de estado, mitigación de condiciones de carrera a nivel de diseño lingüístico, modelo "no share" | Concurrencia segura por diseño, ausencia de locks y deadlocks, escalabilidad horizontal | Overhead del paso de mensajes, depuración compleja, riesgo de desbordamiento de buzones | Erlang, Rust (vía librerías) |
+---
+
+## ✅ Instrucciones para GitHub
+
+1. Ve a `Tema_2/codigos/python/`
+2. Haz clic en **"Add file"** → **"Create new file"**
+3. Escribe `README.md`
+4. **Pega** todo el texto de arriba
+5. Commit: `"Añade README completo para Python"`
+6. **Commit changes**
+
+---
+
+**¿Ya lo creaste? Avísame y te doy el siguiente (JavaScript).**
