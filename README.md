@@ -11,7 +11,7 @@ Este programa calcula la **cantidad de pasos** que tarda cada número desde 1 ha
 ## Requisitos previos
 | Requisito | Versión mínima | Comando de verificación |
 |-----------|---------------|------------------------|
-| Python | 3.12 o superior | `python --version` |
+| Python | 3.12 o superior | python --version |
 
 ## Instalación (si no tienes Python)
 Si no tienes Python instalado, descárgalo desde:
