@@ -1,4 +1,4 @@
-# Algoritmo de Collatz en JavaScript (Node.js)
+# Algoritmo de Collatz en Zig
 
 ## Descripción del algoritmo
 La **conjetura de Collatz** (también conocida como problema 3n+1) es un problema matemático que establece que, para cualquier número entero positivo, aplicando las siguientes reglas se llega siempre al número 1:
@@ -11,34 +11,54 @@ Este programa calcula la **cantidad de pasos** que tarda cada número desde 1 ha
 ## Requisitos previos
 | Requisito | Versión mínima | Comando de verificación |
 |-----------|---------------|------------------------|
-| Node.js | 18.x o superior | `node --version` |
+| Zig | 0.13.0 o superior | zig version |
 
-## Instalación (si no tienes Node.js)
-Si no tienes Node.js instalado, descárgalo desde:
-- [nodejs.org](https://nodejs.org/)
+## Instalación (si no tienes Zig)
+Zig no requiere un instalador tradicional. Solo debes descargar el archivo ZIP y añadirlo al PATH.
 
-**Recomendación:** Descarga la versión **LTS** (Long Term Support).
+### Paso 1: Descargar Zig
+Ve a la página oficial: [ziglang.org/download/](https://ziglang.org/download/)
+
+Descarga la versión para Windows: `zig-windows-x86_64-0.13.0.zip` (o la versión más reciente estable).
+
+### Paso 2: Extraer y mover
+- Extrae el contenido del ZIP en una carpeta permanente (ej: `C:\zig`)
+- La carpeta debe contener el archivo `zig.exe`
+
+### Paso 3: Añadir al PATH
+1. Abre **Configuración** → **Sistema** → **Información**
+2. Haz clic en **"Configuración avanzada del sistema"**
+3. Ve a **"Variables de entorno"**
+4. En **"Variables del sistema"**, busca y edita la variable `Path`
+5. Agrega la ruta de la carpeta donde está `zig.exe` (ej: `C:\zig`)
+6. Haz clic en **Aceptar** en todas las ventanas
+
+### Paso 4: Verificar la instalación
+Abre una nueva terminal y ejecuta:
+zig version
+
+Deberías ver la versión instalada (ej: 0.13.0).
 
 ## Ejecución del programa
-
 ### Paso 1: Abrir terminal
-- En Windows: Abre **PowerShell** o **Símbolo del sistema**
-- En Linux/Mac: Abre **Terminal**
+En Windows: Abre PowerShell o Símbolo del sistema
+
+También puedes usar el Developer Command Prompt si tienes problemas
 
 ### Paso 2: Navegar a la carpeta del código
 cd ruta/donde/guardaste/el/codigo
 
 ### Paso 3: Ejecutar el programa
-node collatz.js
+zig run collatz.zig
 
 ## Ejemplo completo (asumiendo que el archivo está en el Escritorio)
 cd C:\Users\TuUsuario\Desktop
-node collatz.js
+zig run collatz.zig
 
 ## Resultado esperado
-Lenguaje: JavaScript (Node.js)
+Lenguaje: Zig
 Números procesados: 1 hasta 100000
-Tiempo de ejecución: 22 milisegundos
+Tiempo de ejecución: 46.87 milisegundos
 Total de pasos acumulados: 10753840
 
 ## Hardware utilizado para las pruebas
@@ -47,26 +67,38 @@ RAM: 16.0 GB
 Sistema operativo: Windows 11 Pro (23H2)
 
 ## Análisis de rendimiento
-JavaScript es un lenguaje dinámico e interpretado, pero su motor V8 (utilizado por Node.js) implementa compilación JIT (Just-In-Time). Esto significa que el código se compila a nativo mientras se ejecuta, lo que le permite alcanzar un rendimiento muy superior al de lenguajes interpretados tradicionales como Python.
+Zig es un lenguaje compilado a nativo mediante LLVM, diseñado como un sucesor moderno de C. Se caracteriza por:
+Control explícito de memoria: No tiene recolector de basura.
+Ausencia de variables ocultas: Todo es explícito, no hay sobrecarga de funciones ocultas.
+Metaprogramación en tiempo de compilación (comptime): Permite ejecutar código en tiempo de compilación.
 
-En las pruebas realizadas, JavaScript fue el más rápido de los cuatro lenguajes (~22 ms), superando incluso a Rust y Zig en este caso particular. Esto se debe a la madurez del motor V8 y sus optimizaciones.
+En las pruebas realizadas, Zig obtuvo tiempos de ~47 ms, ubicándose en el rango medio-alto. Su rendimiento es bueno, aunque fue superado por Rust y JavaScript en este caso particular.
 
-## Factores que afectan el rendimiento en JavaScript:
-Compilación JIT: El código se compila a nativo en tiempo de ejecución, no antes.
-Tipado dinámico: Las variables pueden cambiar de tipo, lo que añade cierta sobrecarga.
-Event Loop: Modelo asíncrono no bloqueante para entrada/salida.
-Recolector de basura: Gestiona automáticamente la memoria, pero puede introducir pausas.
+## Factores que afectan el rendimiento en Zig:
+Compilación nativa (LLVM): Genera código optimizado para el hardware.
+Ausencia de recolector de basura: No hay pausas para liberar memoria.
+Control manual de memoria: Puede ser más propenso a errores, pero más predecible.
+Sin sobrecarga oculta: No hay excepciones ni RTTI (información de tipo en tiempo de ejecución).
+
+## Comparación con otros lenguajes compilados
+
+| Característica | Zig | Rust |
+|----------------|-----|------|
+| Recolector de basura | No | No |
+| Compilación | LLVM | LLVM |
+| Seguridad de memoria | Manual (con opciones de seguridad) | Ownership (garantizada en compilación) |
+| Curva de aprendizaje | Moderada | Alta |
 
 ## Cómo reproducir las pruebas empíricas
-Asegúrate de tener Node.js instalado correctamente.
-Descarga el archivo collatz.js desde este repositorio.
+Asegúrate de tener Zig instalado correctamente.
+Descarga el archivo collatz.zig desde este repositorio.
 Ejecuta el programa al menos 3 veces y calcula el promedio de los tiempos.
 Registra los resultados en la tabla comparativa del informe.
 
 ## Enlaces de interés
-Conjetura de Collatz - Wikipedia
-Documentación oficial de Node.js
-Motor V8 de Google
+- [Conjetura de Collatz - Wikipedia](https://es.wikipedia.org/wiki/Conjetura_de_Collatz)
+- [Documentación oficial de Zig](https://ziglang.org/documentation/0.13.0/)
+- [Descargar Zig](https://ziglang.org/download/)
 
 ## Créditos
 Asignatura: Lenguajes y Compiladores (UNEG)
