@@ -66,7 +66,6 @@ rust/
 ├── Cargo.toml
 ├── src/
 │   └── main.rs
-└── target/
 ```
 ## Resultado esperado
 Lenguaje: Rust
