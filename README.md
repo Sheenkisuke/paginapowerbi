@@ -1,20 +1,21 @@
-{
-  "arbol1": {
-    "operador": "*",
+# Árbol 1: (id + id) * id
+arbol1 = {
+    "valor": "*",
     "izquierda": {
-      "operador": "+",
-      "izquierda": "id",
-      "derecha": "id"
+        "valor": "+",
+        "izquierda": {"valor": "id"},
+        "derecha": {"valor": "id"}
     },
-    "derecha": "id"
-  },
-  "arbol2": {
-    "operador": "+",
-    "izquierda": "id",
+    "derecha": {"valor": "id"}
+}
+
+# Árbol 2: id + (id * id)
+arbol2 = {
+    "valor": "+",
+    "izquierda": {"valor": "id"},
     "derecha": {
-      "operador": "*",
-      "izquierda": "id",
-      "derecha": "id"
+        "valor": "*",
+        "izquierda": {"valor": "id"},
+        "derecha": {"valor": "id"}
     }
-  }
 }
