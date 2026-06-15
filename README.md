@@ -1,4 +1,6 @@
 # Árbol 1: (id + id) * id
+
+'''
 arbol1 = {
     "valor": "*",
     "izquierda": {
@@ -19,3 +21,4 @@ arbol2 = {
         "derecha": {"valor": "id"}
     }
 }
+'''
