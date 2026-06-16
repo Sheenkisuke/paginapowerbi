@@ -17,3 +17,8 @@ hola
     id <E> * <E>
         |     |
        id    id
+
+
+```text
+<E>
+```
