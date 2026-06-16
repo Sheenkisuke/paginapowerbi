@@ -25,7 +25,7 @@ Las gramáticas mal diseñadas pueden causar errores en los compiladores, como b
 Una gramática es ambigua si existe al menos una cadena que puede ser derivada mediante dos árboles de derivación distintos. Esto es indeseable en los lenguajes de programación porque un programa no debería tener más de un significado posible.
 
 **Ejemplo de gramática ambigua para expresiones aritméticas:**
-
+```text
 <E> ::= <E> + <E> | <E> * <E> | id
 
 **Cadena ambigua:** id + id * id
@@ -58,13 +58,13 @@ Una gramática es ambigua si existe al menos una cadena que puede ser derivada m
 
 Esta gramática elimina la ambigüedad porque fuerza la precedencia de los operadores: la multiplicación (*) tiene mayor prioridad que la suma (+) (Aho et al., 2008).
 
-
+```
 ## b) Recursividad por la Izquierda
 
 Un problema común en los analizadores sintácticos descendentes (top-down) es la recursividad por la izquierda. Una gramática es recursiva por la izquierda si contiene una regla de la forma A → A α. Esto provoca bucles infinitos en los analizadores recursivos.
 
 **Ejemplo de gramática con recursividad por la izquierda:**
-
+```text
 <E> ::= <E> + <T> | <T>
 <T> ::= id
 
@@ -98,13 +98,13 @@ Aquí A = <E>, α = + <T>, β = <T>
 
 Esta gramática puede ser procesada sin problemas por un analizador descendente (Hopcroft, Motwani & Ullman, 2007).
 
-
+```
 ## c) Factorización por la Izquierda
 
 Es una técnica que se aplica cuando dos o más reglas de un mismo no terminal comparten un prefijo común. Esto causa ambigüedad temporal en el analizador, que no sabe qué regla elegir hasta leer más tokens.
 
 **Ejemplo de gramática que requiere factorización:**
-
+```text
 <A> ::= id = <E> | id ( <E> )
 
 
@@ -131,5 +131,5 @@ A' → β₁ | β₂ | ... | βₙ
 
 
 Esta gramática factorizada permite al analizador leer el token id y luego decidir qué camino tomar basándose en el siguiente token (si es = o () (Aho et al., 2008).
-
+```
 
