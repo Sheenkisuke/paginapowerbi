@@ -26,13 +26,13 @@ Se presentan cuatro actividades principales:
 Tema_3/
 ├── Documentacion_Actividades/
 │ ├── README.md
-│ ├── Actividad_2.1_Fundamentos_Jerarquia/
+│ ├── Actividad_2.1/
 │ │ └── README.md
-│ ├── Actividad_2.2_Derivacion_Genoma/
+│ ├── Actividad_2.2/
 │ │ └── README.md
-│ ├── Actividad_2.3_Higiene_Optimizacion/
+│ ├── Actividad_2.3/
 │ │ └── README.md
-│ └── Actividad_2.4_PGN_Automata/
+│ └── Actividad_2.4/
 │ └── README.md
 ├── Informe_Tema_3_LosASTronautas.pdf
 ├── Presentacion_Tema_3_LosASTronautas.pptx
