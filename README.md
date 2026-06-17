@@ -21,6 +21,24 @@ Se presentan cuatro actividades principales:
 
 ---
 
+## 📁 Estructura del repositorio (Tema 3)
+Tema_3/
+├── Documentacion_Actividades/
+│ ├── README.md
+│ ├── Actividad_2.1_Fundamentos_Jerarquia/
+│ │ └── README.md
+│ ├── Actividad_2.2_Derivacion_Genoma/
+│ │ └── README.md
+│ ├── Actividad_2.3_Higiene_Optimizacion/
+│ │ └── README.md
+│ └── Actividad_2.4_PGN_Automata/
+│ └── README.md
+├── Informe_Tema_3_LosASTronautas.pdf
+├── Presentacion_Tema_3_LosASTronautas.pptx
+└── README.md
+
+---
+
 ## 📎 Entregables
 
 | Entregable | Enlace |
