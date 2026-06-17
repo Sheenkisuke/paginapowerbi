@@ -8,7 +8,7 @@
 
 ---
 
-## 📌 Resumen del Tema 3
+## Resumen del Tema 3
 
 Este trabajo aborda los fundamentos teóricos de los lenguajes y gramáticas formales, aplicando los conceptos de la Jerarquía de Chomsky, alfabetos, palabras, lenguajes formales, gramáticas formales y expresiones regulares a casos prácticos concretos.
 
@@ -21,7 +21,8 @@ Se presentan cuatro actividades principales:
 
 ---
 
-## 📁 Estructura del repositorio (Tema 3)
+## Estructura del repositorio (Tema 3)
+```
 Tema_3/
 ├── Documentacion_Actividades/
 │ ├── README.md
@@ -36,10 +37,10 @@ Tema_3/
 ├── Informe_Tema_3_LosASTronautas.pdf
 ├── Presentacion_Tema_3_LosASTronautas.pptx
 └── README.md
-
+```
 ---
 
-## 📎 Entregables
+## Entregables
 
 | Entregable | Enlace |
 |------------|--------|
@@ -49,7 +50,7 @@ Tema_3/
 
 ---
 
-## 👨‍🚀 Integrantes
+## Integrantes
 
 | Nombre | Cédula | Sección | Actividad asignada |
 |--------|--------|---------|-------------------|
@@ -60,7 +61,7 @@ Tema_3/
 
 ---
 
-## 🔗 Enlaces de interés
+## Enlaces de interés
 
 - [Jerarquía de Chomsky - Wikipedia](https://es.wikipedia.org/wiki/Jerarqu%C3%ADa_de_Chomsky)
 - [Teoría de autómatas - Wikipedia](https://es.wikipedia.org/wiki/Teor%C3%ADa_de_aut%C3%B3matas)
@@ -68,7 +69,7 @@ Tema_3/
 
 ---
 
-## 📝 Créditos
+## Créditos
 
 **© 2026 - Los ASTronautas**  
 *Universidad Nacional Experimental de Guayana (UNEG)*
