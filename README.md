@@ -67,9 +67,3 @@ Tema_3/
 - [Teoría de autómatas - Wikipedia](https://es.wikipedia.org/wiki/Teor%C3%ADa_de_aut%C3%B3matas)
 - [Notación PGN - Estándar de ajedrez](https://es.wikipedia.org/wiki/Portable_Game_Notation)
 
----
-
-## Créditos
-
-**© 2026 - Los ASTronautas**  
-*Universidad Nacional Experimental de Guayana (UNEG)*
